@@ -1,0 +1,281 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #100d18;
+    color: #e8e1f0;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.8;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.navbar {
+    background-color: #090710;
+    padding: 18px 0;
+    border-bottom: 1px solid #573477;
+}
+
+.navbar-brand {
+    color: #c69af5 !important;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    color: #e8e1f0 !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #c69af5 !important;
+}
+
+/* APRESENTAÇÃO PRINCIPAL */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #100d18,
+        #28143d,
+        #100d18
+    );
+    padding: 110px 20px;
+    text-align: center;
+    border-bottom: 1px solid #573477;
+}
+
+.hero h1 {
+    color: #d5a9ff;
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    color: #d0c5dc;
+    font-size: 19px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* BOTÃO PERSONALIZADO */
+
+.btn-geek {
+    background-color: #7041a0;
+    color: white;
+    border: 1px solid #b78be6;
+    padding: 12px 28px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-geek:hover {
+    background-color: #945bc7;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* SEÇÃO DE INTRODUÇÃO */
+
+.introducao {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.introducao h2 {
+    color: #c69af5;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.introducao p {
+    color: #d0c5dc;
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #090710;
+    border-top: 1px solid #573477;
+    text-align: center;
+    padding: 25px 15px;
+    color: #a99bb8;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .introducao h2 {
+        font-size: 26px;
+    }
+
+    .introducao p {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+/* CARDS DA PÁGINA GAMES */
+
+.geek-card {
+    background-color: #1b1426;
+    color: #e8e1f0;
+    border: 1px solid #573477;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.geek-card:hover {
+    transform: translateY(-5px);
+    border-color: #c69af5;
+    box-shadow: 0 5px 20px rgba(142, 83, 190, 0.2);
+}
+
+.geek-card .card-title {
+    color: #c69af5;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.geek-card .card-text {
+    color: #d0c5dc;
+}
+
+/* AJUSTES DE RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .introducao {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .introducao h2 {
+        font-size: 24px;
+    }
+
+    .introducao p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .geek-card {
+        margin-bottom: 5px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+}
+
+/* IMAGENS DO GEEK NEXUS */
+
+.imagem-destaque {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #7041a0;
+    box-shadow: 0 5px 20px rgba(112, 65, 160, 0.25);
+    margin-bottom: 25px;
+}
+.imagem-card {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.secao-imagens {
+    padding-top: 35px;
+    padding-bottom: 55px;
+}
+
+@media (max-width: 576px) {
+    .imagem-destaque {
+        max-height: 250px;
+    }
+
+    .imagem-card {
+        height: 190px;
+    }
+}
